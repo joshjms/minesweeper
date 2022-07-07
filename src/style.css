@@ -73,13 +73,13 @@
     }
 
     .cellContainer {
-        height: 50px;
-        width: 50px;
+        height: 45px;
+        width: 45px;
     }
 
     .cell {
-        height: 45px;
-        width: 45px;
+        height: 40px;
+        width: 40px;
         border-radius: 5px;
         font-size: 18px;
     }

@@ -171,7 +171,7 @@ class Board extends React.Component {
         if (this.state.boardData[x][y].isRevealed || this.state.boardData[x][y].isFlagged) return null;
 
         if (this.state.boardData[x][y].isMine) {
-            this.setState({ gameStatus: 'You Lose' });
+            this.setState({ gameStatus: 'You Lose 😋' });
             this.revealBoard();
             alert('You Lose');
             return null;
@@ -188,9 +188,10 @@ class Board extends React.Component {
         }
 
         if (this.checkWin(updatedData)) {
-            this.setState({ mineCount: 0, gameStatus: 'You Win' });
+            this.setState({ mineCount: 0, gameStatus: 'You Win 🥳' });
             this.revealBoard();
             alert("You Win");
+            return null;
         }
 
         this.setState({
